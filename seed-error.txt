@@ -1,0 +1,26 @@
+Loaded Prisma config from prisma.config.ts.
+
+Running seed command `tsx prisma/seed.ts` ...
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+Error: Transform failed with 1 error:
+C:\Users\USER\Projects\autofix\prisma\seed.ts:168:2: ERROR: Unexpected "}"
+    at failureErrorWithLog (C:\Users\USER\Projects\autofix\node_modules\esbuild\lib\main.js:1748:15)
+    at C:\Users\USER\Projects\autofix\node_modules\esbuild\lib\main.js:1017:50
+    at responseCallbacks.<computed> (C:\Users\USER\Projects\autofix\node_modules\esbuild\lib\main.js:884:9)
+    at handleIncomingPacket (C:\Users\USER\Projects\autofix\node_modules\esbuild\lib\main.js:939:12)
+    at Socket.readFromStdout (C:\Users\USER\Projects\autofix\node_modules\esbuild\lib\main.js:862:7)
+    at Socket.emit (node:events:509:28)
+    at addChunk (node:internal/streams/readable:563:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:514:3)
+    at Readable.push (node:internal/streams/readable:394:5)
+    at Pipe.onStreamRead (node:internal/stream_base_commons:189:23) {
+  name: 'TransformError'
+}
+
+Node.js v24.18.1
+
+An error occurred while running the seed command:
+Error: Command failed with exit code 1: tsx prisma/seed.ts
